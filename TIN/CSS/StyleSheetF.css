@@ -1,0 +1,65 @@
+
+body{
+
+  padding: 10px;
+  background-position: center;
+  
+  background-color:black;
+  
+}
+
+
+h1{
+	 margin-left: 20px;
+	 font-size: 20;
+	 text-decoration: underline;
+	 color:white;
+}
+h2{
+	 margin-left: 20px;
+	 font-size: 16;
+	 text-decoration: underline;
+	 color:white;
+}
+div[class=boxed]{
+	  margin-left: 10%;
+	  margin-right: 10%;
+	  
+ background-image:url('https://i.redd.it/u8ke6ddyd0n51.png');
+
+}
+img{
+	 
+	   background-repeat: no-repeat;
+       background-size: cover;
+}
+p[class=borderexample]{
+	 margin-left: 25px;
+	 border-style:solid;
+    border-color:gray;
+	background-color:#2E2E2E;
+	color:white;
+	padding: 10px;
+	
+}
+<style>
+a:link {
+  color: green;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:visited {
+  color: pink;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:hover {
+  color: red;
+  background-color: transparent;
+  text-decoration: underline;
+}
+a:active {
+  color: yellow;
+  background-color: transparent;
+  text-decoration: underline;
+}
