@@ -1,0 +1,106 @@
+@font-face {
+  font-family: 'MyWebFont';
+  src: url('webfont.eot'); /* IE9 Compat Modes */
+  src: url('webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('webfont.woff2') format('woff2'), /* Super Modern Browsers */
+       url('webfont.woff') format('woff'), /* Pretty Modern Browsers */
+       url('webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('webfont.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+@import url(//fonts.googleapis.com/css?family=Open+Sans);
+header{
+	 text-align: center;
+	 margin-top: 20px;
+	 font-family: 'Open Sans', sans-serif;
+}
+img[class=banner]{
+  border-radius: 20%;
+   transform: rotate(10deg);
+    box-shadow: 10px 10px 5px #808080;
+    -moz-box-shadow: 10px 10px 5px #808080;
+     -webkit-box-shadow: 10px 10px 5px #808080;
+     -khtml-box-shadow: 10px 10px 5px #808080;
+}
+body{
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color:#DCDCDC;
+  color:black;
+   display: grid;
+  
+}
+ .aside {
+	
+        padding: 10px;
+        width: min-content;
+        float: left;
+        font-style: italic;
+		align-self: start;
+      
+    }
+.article {
+	   grid-template-columns: 330px 330px 330px;
+        grid-template-rows: auto auto;
+        column-gap: 10px;
+        display: grid;
+        grid-auto-flow: column;
+        font-family: 'MyWebFont', Fallback, sans-serif;
+		
+    }
+	
+    figure {
+        margin: 5px;
+        float: left;
+    }
+	figcaption {
+
+        text-align: center;
+	  font-size: 13px;
+	  font-family: 'MyWebFont', Fallback, sans-serif;
+    } 
+	.quote{
+        display: block;
+        float: left;
+	    text-align: center;
+        padding: 0 0 0 10px;
+        width: 170px;
+        font-size: 1.2em;
+        line-height: 1.4em;
+        color: red;
+	   font-family: 'Open Sans', sans-serif;
+   
+    }
+	 footer {
+        bottom: 0;
+       font-size: 15px;
+       color:red;
+        margin-top: auto;
+		 font-family: 'MyWebFont', Fallback, sans-serif;
+    }
+	
+	
+ @media (max-width:800px) {
+        .main {
+            display: grid;
+            -webkit-flex-direction: column;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .main .article {
+            order: 1;
+            grid-template-columns: 600px;
+            grid-template-rows: repeat(5, min-content);
+            column-gap: 10px;
+            row-gap: 15px;
+            display: grid;
+        }
+
+        .main .aside {
+            order: 2;
+            float: initial;
+            width: initial;
+        }
+    }
+
