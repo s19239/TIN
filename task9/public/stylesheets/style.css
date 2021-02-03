@@ -1,0 +1,17 @@
+body {
+    padding: 50px;
+    font: 20px Arial, sans-serif;
+}
+
+p {
+    color: #4DCB94;
+}
+
+label {
+    color: pink;
+}
+
+.res {
+    color: black;
+    text-decoration: underline;
+}
